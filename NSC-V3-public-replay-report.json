@@ -1,7 +1,7 @@
 {
   "schema": "NSC-V3-public-replay-report-v1",
-  "created_at": "2026-07-01T15:24:06.330166+00:00",
-  "ok": false,
+  "created_at": "2026-07-01T15:33:36.050396+00:00",
+  "ok": true,
   "count_sequence": [
     0,
     0,
@@ -65,8 +65,9 @@
     "halt_program",
     "halted"
   ],
-  "final_slot_hash": "a21251364caf782b",
-  "expected_final_slot_hash": "55910e775174a5c5",
-  "final_slot_matches": false,
-  "replay_hash": "4ccb7cd28a312c30"
+  "final_count": 5,
+  "final_cursor": "halted",
+  "expected_final_slot_hash": "21e5ec2bc31303c1",
+  "final_slot_matches": true,
+  "replay_hash": "d83566b91d8c2d4b"
 }
