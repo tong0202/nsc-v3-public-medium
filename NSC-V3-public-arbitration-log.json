@@ -1,0 +1,428 @@
+{
+  "schema": "NSC-V3-public-arbitration-log-v1",
+  "created_at": "2026-07-01T15:15:58.129323+00:00",
+  "records": [
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.129841+00:00",
+      "candidate_hash": "6d95a1757ef17278",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "21d47c69400da00d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.130360+00:00",
+      "candidate_hash": "da344fc019e45a57",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "3871514d2866f792"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.130900+00:00",
+      "candidate_hash": "1438a2828600fea4",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "b163ef392c9a8290"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.131393+00:00",
+      "candidate_hash": "1c341cfc84a82a4f",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "d6d47c23029fc474"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.131772+00:00",
+      "candidate_hash": "eabc6285d36ddc2c",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "c38ddec12a1117fc"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.132126+00:00",
+      "candidate_hash": "a42e0e243ca31869",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "09beab60b0e08dd1"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.132381+00:00",
+      "candidate_hash": "f59f8b8c6852a758",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "11d5e6e73528e13d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.132616+00:00",
+      "candidate_hash": "546d4301dea0fce7",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "23dbc1842ba05765"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.132828+00:00",
+      "candidate_hash": "9ccd41120c543c0e",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "01017c5a15bb1e3c"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.133029+00:00",
+      "candidate_hash": "234c8406dd570b3f",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "e5bfe4ee9479b0ea"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.133231+00:00",
+      "candidate_hash": "a1783ebb5c4bdff4",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "41f7d151a96090ed"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.133437+00:00",
+      "candidate_hash": "06fd355ba954c4ad",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "e10d68763bb24d66"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.133878+00:00",
+      "candidate_hash": "7fd358ad2b4986be",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "c251f286b8401a4d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.134319+00:00",
+      "candidate_hash": "e7a140ec4c6fb6ce",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "2e0d290a0c252d45"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.134763+00:00",
+      "candidate_hash": "ddbde2b5d5d405d6",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "95ce712296fc0f0d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.135371+00:00",
+      "candidate_hash": "4c4fffbb753ed251",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "d37c3317c6b0bf9f"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.135799+00:00",
+      "candidate_hash": "974174b2b9b8974f",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "579240a5fd93ee71"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.136159+00:00",
+      "candidate_hash": "0313a2280db0cee4",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "cfb94894f7c663a4"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.136648+00:00",
+      "candidate_hash": "1910135adfccbe72",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "44f5d58649a080e9"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.137155+00:00",
+      "candidate_hash": "4ad569ef437a1756",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "42655b8a87c0a44d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.137638+00:00",
+      "candidate_hash": "e4a27157367c6377",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "4bba581da9e39e8b"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.138074+00:00",
+      "candidate_hash": "75e0a3422289478a",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "25f9e16dec83a366"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.138450+00:00",
+      "candidate_hash": "18bb1602f4f073de",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "636fc38682b97267"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.138768+00:00",
+      "candidate_hash": "a58340cfe6541e79",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "159ad830a16a9fad"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.139140+00:00",
+      "candidate_hash": "9542f37c00370cf7",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "6a09562d71e356c5"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.139653+00:00",
+      "candidate_hash": "0dc070e4d7880e84",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "0d567934534d3598"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.139992+00:00",
+      "candidate_hash": "683d1a859a9e2367",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "f9c225e9c1368cfc"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.140301+00:00",
+      "candidate_hash": "fe5ae770a11aee42",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "52f2a2716f00316d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.140754+00:00",
+      "candidate_hash": "198e317413779f80",
+      "parent_slot_matches": true,
+      "cursor_matches": true,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "ACCEPT",
+      "reasons": [
+        "accepted_by_public_sentence_rule"
+      ],
+      "arbitration_hash": "3db35ac5e21f767d"
+    },
+    {
+      "schema": "NSC-V3-arbitration-record-v1",
+      "created_at": "2026-07-01T15:15:58.141261+00:00",
+      "candidate_hash": "d93312bdc57e6bf9",
+      "parent_slot_matches": false,
+      "cursor_matches": false,
+      "tick_unused": true,
+      "slot_shape_ok": true,
+      "decision": "REJECT",
+      "reasons": [
+        "parent_slot_mismatch",
+        "cursor_mismatch"
+      ],
+      "arbitration_hash": "f37260adc9cf0719"
+    }
+  ],
+  "arbitration_log_hash": "9f1bd076d77d3417"
+}
