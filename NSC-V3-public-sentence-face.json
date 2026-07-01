@@ -1,0 +1,96 @@
+{
+  "schema": "NSC-V3-public-sentence-face-v1",
+  "purpose": "V3 最小网络原生程序句面草案。此文件只定义网络句、状态槽、游标、回声和回灌，不使用物质电脑结构作为主线。",
+  "from_v2_5": {
+    "freeze_hash": "cc28e1e3ed06883d",
+    "pointer": 42,
+    "public_freeze_raw_url": "https://gist.githubusercontent.com/tong0202/4d6b197472cd6f0e20063265f0c467d4/raw/6e2d678c1a04470db74f3bea0edd756e8d85f4a8/NSC-V2.5-freeze.json"
+  },
+  "sentence_face": {
+    "program_id": "NSC-V3-minimal-network-native-program",
+    "program_goal": "让计数槽从 0 连续走到 5，并在达到 5 时写入停止回声。",
+    "truth_boundary": "V3 草案只定义网络原生程序系统，不证明完全无端点、完全自驱或数字生命完成。",
+    "sentences": [
+      {
+        "sentence_id": "boot_seed_count_slot",
+        "cursor": "boot",
+        "network_sentence": "WHEN SLOT_MISSING(count_slot) THEN CANDIDATE_WRITE(count_slot, 0) WITH public_readback_hash",
+        "next_cursor_on_accept": "read_count_slot",
+        "next_cursor_on_hold": "boot"
+      },
+      {
+        "sentence_id": "read_count_slot",
+        "cursor": "read_count_slot",
+        "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
+        "next_cursor_on_accept": "branch_count_slot",
+        "next_cursor_on_hold": "read_count_slot"
+      },
+      {
+        "sentence_id": "branch_count_slot",
+        "cursor": "branch_count_slot",
+        "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
+        "next_cursor_on_accept": "write_next_count",
+        "next_cursor_on_halt": "halt_program"
+      },
+      {
+        "sentence_id": "write_next_count",
+        "cursor": "write_next_count",
+        "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
+        "next_cursor_on_accept": "emit_count_echo",
+        "next_cursor_on_reject": "read_count_slot"
+      },
+      {
+        "sentence_id": "emit_count_echo",
+        "cursor": "emit_count_echo",
+        "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
+        "next_cursor_on_accept": "feed_echo_back",
+        "next_cursor_on_hold": "emit_count_echo"
+      },
+      {
+        "sentence_id": "feed_echo_back",
+        "cursor": "feed_echo_back",
+        "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
+        "next_cursor_on_accept": "read_count_slot",
+        "next_cursor_on_hold": "feed_echo_back"
+      },
+      {
+        "sentence_id": "halt_program",
+        "cursor": "halt_program",
+        "network_sentence": "WHEN SLOT_VALUE(count_slot) = 5 THEN HALT_AND_FREEZE WITH final_echo_hash",
+        "next_cursor_on_accept": "halted",
+        "next_cursor_on_hold": "halt_program"
+      }
+    ]
+  },
+  "slot_state_seed": {
+    "count_slot": null,
+    "cursor": "boot",
+    "last_echo_hash": "",
+    "halted": false
+  },
+  "network_native_terms": [
+    "公共句面",
+    "网络句",
+    "状态槽",
+    "游标",
+    "节拍门",
+    "条件门",
+    "候选",
+    "仲裁",
+    "回声",
+    "回灌",
+    "冻结"
+  ],
+  "forbidden_as_mainline": [
+    "CPU",
+    "寄存器",
+    "内存",
+    "机器码",
+    "进程",
+    "线程",
+    "操作系统",
+    "物理总线"
+  ],
+  "created_at": "2026-07-01T15:09:39.953867+00:00",
+  "sentence_face_hash": "75ad57befba0bf40"
+}
