@@ -1,0 +1,32 @@
+{
+  "schema": "NSC-V3-freeze-v1",
+  "created_at": "2026-07-01T15:24:37.123213+00:00",
+  "verdict": "网络电脑V3_网络原生程序系统_v0成立",
+  "from_v2_5_freeze_hash": "cc28e1e3ed06883d",
+  "from_v2_5_pointer": 42,
+  "final_count": 5,
+  "final_cursor": "halted",
+  "halted": true,
+  "accepted_step_count": 29,
+  "rejected_candidate_count": 1,
+  "public_sentence_face_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/d6d0d2ae542eac3032b13e071e3bf8cc8d816c03/NSC-V3-public-sentence-face.json",
+  "public_slot_state_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/cbc98b39228beb6e55b2d9e8ed2734b2eaba2fb3/NSC-V3-public-slot-state.json",
+  "public_echo_chain_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/77dec069a47a33a009127d2487d795ad3dcc23bb/NSC-V3-public-echo-chain.json",
+  "public_candidate_pool_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/8a20dd0371e09a0de6787286dd76018ecdcf67c7/NSC-V3-public-candidate-pool.json",
+  "public_arbitration_log_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/60bdca4d39a4f52931a9d8ce205ecac262bf2602/NSC-V3-public-arbitration-log.json",
+  "public_program_index_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/882490d508ca84335c52ccd718536f7f3623f916/NSC-V3-public-program-index.json",
+  "public_replay_report_raw_url": "https://raw.githubusercontent.com/tong0202/nsc-v3-public-medium/abe401f1eee187a294644d71c4e39d3056051646/NSC-V3-public-replay-report.json",
+  "layer_result_hashes": {
+    "V3-1": "9be04c4ff09ac4eb",
+    "V3-2": "733961d31ecd8f52",
+    "V3-3": "da1bf32b6fc3dec8",
+    "V3-4": "1641fa876cfd83da",
+    "V3-5": "fa846574eb6dc425",
+    "V3-6": "7b3a7481f8795d0a",
+    "V3-7": "752088ede7e4e5f8",
+    "V3-8": "01761d3bc34c528a",
+    "V3-9": "f54abbecea0c1323"
+  },
+  "truth_boundary": "V3 是最小网络原生程序系统：证明公共句面、状态槽、游标、回声、回灌和有限循环；不等于完全无端点、完全自驱或数字生命完成。",
+  "freeze_hash": "4a35ad6ecc739a8c"
+}
