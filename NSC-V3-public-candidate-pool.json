@@ -1,1061 +1,1061 @@
 {
   "schema": "NSC-V3-public-candidate-pool-v1",
-  "created_at": "2026-07-01T15:29:50.779730+00:00",
+  "created_at": "2026-07-01T15:43:35.251479+00:00",
   "accepted_candidates": [
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.780086+00:00",
+        "created_at": "2026-07-01T15:43:35.251819+00:00",
         "step": 1,
         "sentence_id": "boot_seed_count_slot",
         "network_sentence": "WHEN SLOT_MISSING(count_slot) THEN CANDIDATE_WRITE(count_slot, 0) WITH public_readback_hash",
-        "parent_slot_hash": "32b889e3a75cfc99",
-        "candidate_slot_hash": "a073c523b0ce6c20",
-        "tick_hash": "5fe37d9172693c7a",
-        "echo_hash": "856927036c1f95d4",
+        "parent_slot_hash": "ed13208b54f1c6ad",
+        "candidate_slot_hash": "fbd08fea28147b8e",
+        "tick_hash": "859aedb9de844c38",
+        "echo_hash": "40fc9bbbd08d4853",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": null,
           "cursor": "boot",
           "last_echo_hash": "",
           "halted": false,
           "step": 0,
-          "slot_state_hash": "5c7b4a422846b296"
+          "slot_state_hash": "a625f8bc6a9108ea"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "read_count_slot",
-          "last_echo_hash": "856927036c1f95d4",
+          "last_echo_hash": "40fc9bbbd08d4853",
           "halted": false,
           "step": 1,
-          "slot_state_hash": "f6467c349182de48"
+          "slot_state_hash": "0d4dd49135d82b6a"
         },
-        "candidate_hash": "80da8ddc82a86169"
+        "candidate_hash": "c766d0ef542c6036"
       },
-      "arbitration_hash": "b66f407085714439"
+      "arbitration_hash": "a5c0cab8d2771d4b"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.780479+00:00",
+        "created_at": "2026-07-01T15:43:35.252101+00:00",
         "step": 2,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "a073c523b0ce6c20",
-        "candidate_slot_hash": "509fd292fa6e119b",
-        "tick_hash": "8bb0666a1692a3d6",
-        "echo_hash": "287c52f9c77628be",
+        "parent_slot_hash": "fbd08fea28147b8e",
+        "candidate_slot_hash": "480d30b3e5954538",
+        "tick_hash": "05d0de6d6f976729",
+        "echo_hash": "eb3a5d270f599c94",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "read_count_slot",
-          "last_echo_hash": "856927036c1f95d4",
+          "last_echo_hash": "40fc9bbbd08d4853",
           "halted": false,
           "step": 1,
-          "slot_state_hash": "f6467c349182de48"
+          "slot_state_hash": "0d4dd49135d82b6a"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "287c52f9c77628be",
+          "last_echo_hash": "eb3a5d270f599c94",
           "halted": false,
           "step": 2,
-          "slot_state_hash": "e2bdbaf8fb44aa22"
+          "slot_state_hash": "67de49d4d93da4ef"
         },
-        "candidate_hash": "67d84213c829be5c"
+        "candidate_hash": "cf431383547e45a5"
       },
-      "arbitration_hash": "78d90e6b1bdd6062"
+      "arbitration_hash": "d4df2eaaa6caadad"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.780827+00:00",
+        "created_at": "2026-07-01T15:43:35.252328+00:00",
         "step": 3,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "509fd292fa6e119b",
-        "candidate_slot_hash": "fd521b53ee67e691",
-        "tick_hash": "7bc4181af6f65fbc",
-        "echo_hash": "942d21865db77f46",
+        "parent_slot_hash": "480d30b3e5954538",
+        "candidate_slot_hash": "551a174e41d22735",
+        "tick_hash": "072effcefc06bacf",
+        "echo_hash": "017f6c2762f733d2",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "287c52f9c77628be",
+          "last_echo_hash": "eb3a5d270f599c94",
           "halted": false,
           "step": 2,
-          "slot_state_hash": "e2bdbaf8fb44aa22"
+          "slot_state_hash": "67de49d4d93da4ef"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "write_next_count",
-          "last_echo_hash": "942d21865db77f46",
+          "last_echo_hash": "017f6c2762f733d2",
           "halted": false,
           "step": 3,
-          "slot_state_hash": "c3c58e506c9d47d9"
+          "slot_state_hash": "b360013a40a72526"
         },
-        "candidate_hash": "8be40c9defae1e73"
+        "candidate_hash": "83c128817f01d126"
       },
-      "arbitration_hash": "7ae29036e639b9d1"
+      "arbitration_hash": "19c6267cfca45ede"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.781073+00:00",
+        "created_at": "2026-07-01T15:43:35.252557+00:00",
         "step": 4,
         "sentence_id": "write_next_count",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
-        "parent_slot_hash": "fd521b53ee67e691",
-        "candidate_slot_hash": "005ce3d25b1cfe08",
-        "tick_hash": "1d27b121c70eb9c7",
-        "echo_hash": "d90c0e8972849e5d",
+        "parent_slot_hash": "551a174e41d22735",
+        "candidate_slot_hash": "71f8d27d83494438",
+        "tick_hash": "6c0fcc9824801c6a",
+        "echo_hash": "ae135b40d92961d0",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 0,
           "cursor": "write_next_count",
-          "last_echo_hash": "942d21865db77f46",
+          "last_echo_hash": "017f6c2762f733d2",
           "halted": false,
           "step": 3,
-          "slot_state_hash": "c3c58e506c9d47d9"
+          "slot_state_hash": "b360013a40a72526"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "d90c0e8972849e5d",
+          "last_echo_hash": "ae135b40d92961d0",
           "halted": false,
           "step": 4,
-          "slot_state_hash": "b6294c8140b427be"
+          "slot_state_hash": "946e44a24cb8ff71"
         },
-        "candidate_hash": "de6b12d4a57c7986"
+        "candidate_hash": "7e19333d26415345"
       },
-      "arbitration_hash": "0370eb1c1262cc74"
+      "arbitration_hash": "361f979f341c3161"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.781296+00:00",
+        "created_at": "2026-07-01T15:43:35.252811+00:00",
         "step": 5,
         "sentence_id": "emit_count_echo",
         "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
-        "parent_slot_hash": "005ce3d25b1cfe08",
-        "candidate_slot_hash": "8b0375418f99cb95",
-        "tick_hash": "3e725cf3e8ce5bb2",
-        "echo_hash": "8945b64ca3f413e1",
+        "parent_slot_hash": "71f8d27d83494438",
+        "candidate_slot_hash": "6af655bed2e22655",
+        "tick_hash": "11d524a4970416a2",
+        "echo_hash": "e9938c4e51394774",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "d90c0e8972849e5d",
+          "last_echo_hash": "ae135b40d92961d0",
           "halted": false,
           "step": 4,
-          "slot_state_hash": "b6294c8140b427be"
+          "slot_state_hash": "946e44a24cb8ff71"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "8945b64ca3f413e1",
+          "last_echo_hash": "e9938c4e51394774",
           "halted": false,
           "step": 5,
-          "slot_state_hash": "38161b9a3f5d83cc"
+          "slot_state_hash": "357aecf47a35b53b"
         },
-        "candidate_hash": "f1f00a85fc713126"
+        "candidate_hash": "62a8db1be1e14f03"
       },
-      "arbitration_hash": "a36c4afc71cbbfb1"
+      "arbitration_hash": "3fad9c0064f873f3"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.781508+00:00",
+        "created_at": "2026-07-01T15:43:35.253048+00:00",
         "step": 6,
         "sentence_id": "feed_echo_back",
         "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
-        "parent_slot_hash": "8b0375418f99cb95",
-        "candidate_slot_hash": "1b39f8dcd9561af8",
-        "tick_hash": "34e69ed7cdc92377",
-        "echo_hash": "e4208269d61d42be",
+        "parent_slot_hash": "6af655bed2e22655",
+        "candidate_slot_hash": "9df1a20e80140de5",
+        "tick_hash": "a9049ec3c3da5e7f",
+        "echo_hash": "bbe77b93d3d644b2",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "8945b64ca3f413e1",
+          "last_echo_hash": "e9938c4e51394774",
           "halted": false,
           "step": 5,
-          "slot_state_hash": "38161b9a3f5d83cc"
+          "slot_state_hash": "357aecf47a35b53b"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "read_count_slot",
-          "last_echo_hash": "e4208269d61d42be",
+          "last_echo_hash": "bbe77b93d3d644b2",
           "halted": false,
           "step": 6,
-          "slot_state_hash": "2e84174d624a2c25"
+          "slot_state_hash": "0f490715c687c15e"
         },
-        "candidate_hash": "1b089783df1a325d"
+        "candidate_hash": "11d186a3595e2428"
       },
-      "arbitration_hash": "bf381bb2d2cf05d1"
+      "arbitration_hash": "b5f604ad6dc6d183"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.781715+00:00",
+        "created_at": "2026-07-01T15:43:35.253272+00:00",
         "step": 7,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "1b39f8dcd9561af8",
-        "candidate_slot_hash": "91fd8340a18e4227",
-        "tick_hash": "c597e4569ecde8ba",
-        "echo_hash": "21f9470736288c57",
+        "parent_slot_hash": "9df1a20e80140de5",
+        "candidate_slot_hash": "24bac9f3cc2941d2",
+        "tick_hash": "5ad6e0acac0347a4",
+        "echo_hash": "d81cf3622b48e2ab",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "read_count_slot",
-          "last_echo_hash": "e4208269d61d42be",
+          "last_echo_hash": "bbe77b93d3d644b2",
           "halted": false,
           "step": 6,
-          "slot_state_hash": "2e84174d624a2c25"
+          "slot_state_hash": "0f490715c687c15e"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "21f9470736288c57",
+          "last_echo_hash": "d81cf3622b48e2ab",
           "halted": false,
           "step": 7,
-          "slot_state_hash": "147e465830567410"
+          "slot_state_hash": "07bcd069486fbf47"
         },
-        "candidate_hash": "b9cc98d2b8e9f0ee"
+        "candidate_hash": "cfc79f10ccb02732"
       },
-      "arbitration_hash": "fffd13bedd7a51ef"
+      "arbitration_hash": "92ae2384453119fc"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.781934+00:00",
+        "created_at": "2026-07-01T15:43:35.253503+00:00",
         "step": 8,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "91fd8340a18e4227",
-        "candidate_slot_hash": "d1e7635247609ad4",
-        "tick_hash": "69e094da912d6bdd",
-        "echo_hash": "ae256e1289537993",
+        "parent_slot_hash": "24bac9f3cc2941d2",
+        "candidate_slot_hash": "ac0b98f3efe3b508",
+        "tick_hash": "42ae8a14e7fb658c",
+        "echo_hash": "920cb7e89b87d819",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "21f9470736288c57",
+          "last_echo_hash": "d81cf3622b48e2ab",
           "halted": false,
           "step": 7,
-          "slot_state_hash": "147e465830567410"
+          "slot_state_hash": "07bcd069486fbf47"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "write_next_count",
-          "last_echo_hash": "ae256e1289537993",
+          "last_echo_hash": "920cb7e89b87d819",
           "halted": false,
           "step": 8,
-          "slot_state_hash": "7b58d7eb3f3bdd12"
+          "slot_state_hash": "37606919dd2d7875"
         },
-        "candidate_hash": "b515f6ee3840635e"
+        "candidate_hash": "c7f294918efbf44f"
       },
-      "arbitration_hash": "0e4d3928ec4a20f2"
+      "arbitration_hash": "be7d7d97b13f6989"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.782213+00:00",
+        "created_at": "2026-07-01T15:43:35.253862+00:00",
         "step": 9,
         "sentence_id": "write_next_count",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
-        "parent_slot_hash": "d1e7635247609ad4",
-        "candidate_slot_hash": "0325fc5cbf915334",
-        "tick_hash": "3d0cf399aded9add",
-        "echo_hash": "b53e714f74fe3809",
+        "parent_slot_hash": "ac0b98f3efe3b508",
+        "candidate_slot_hash": "e1410945821091e3",
+        "tick_hash": "2ee40601347f1d4e",
+        "echo_hash": "ae371357a3033391",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 1,
           "cursor": "write_next_count",
-          "last_echo_hash": "ae256e1289537993",
+          "last_echo_hash": "920cb7e89b87d819",
           "halted": false,
           "step": 8,
-          "slot_state_hash": "7b58d7eb3f3bdd12"
+          "slot_state_hash": "37606919dd2d7875"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "b53e714f74fe3809",
+          "last_echo_hash": "ae371357a3033391",
           "halted": false,
           "step": 9,
-          "slot_state_hash": "99fec3f6fdffe8bd"
+          "slot_state_hash": "070b5537c8e200d9"
         },
-        "candidate_hash": "abd3c72d01192187"
+        "candidate_hash": "762d684f95b2b112"
       },
-      "arbitration_hash": "76b48759cb53cda5"
+      "arbitration_hash": "c1598b5a065aea0c"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.782486+00:00",
+        "created_at": "2026-07-01T15:43:35.254122+00:00",
         "step": 10,
         "sentence_id": "emit_count_echo",
         "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
-        "parent_slot_hash": "0325fc5cbf915334",
-        "candidate_slot_hash": "57ca80075e786bf3",
-        "tick_hash": "7ce26cec96301a15",
-        "echo_hash": "c83bc386055d3f2f",
+        "parent_slot_hash": "e1410945821091e3",
+        "candidate_slot_hash": "3700dd0aafedcc12",
+        "tick_hash": "7ce2b8ea8d9d9693",
+        "echo_hash": "fda5ed112252c72e",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "b53e714f74fe3809",
+          "last_echo_hash": "ae371357a3033391",
           "halted": false,
           "step": 9,
-          "slot_state_hash": "99fec3f6fdffe8bd"
+          "slot_state_hash": "070b5537c8e200d9"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "c83bc386055d3f2f",
+          "last_echo_hash": "fda5ed112252c72e",
           "halted": false,
           "step": 10,
-          "slot_state_hash": "4de459d12b760304"
+          "slot_state_hash": "559ef8c9f0c6eb21"
         },
-        "candidate_hash": "7acef2db43e3a48e"
+        "candidate_hash": "521cd959a734afb1"
       },
-      "arbitration_hash": "7072b88fcaa05918"
+      "arbitration_hash": "edea729fca91a3f0"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.782772+00:00",
+        "created_at": "2026-07-01T15:43:35.254341+00:00",
         "step": 11,
         "sentence_id": "feed_echo_back",
         "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
-        "parent_slot_hash": "57ca80075e786bf3",
-        "candidate_slot_hash": "0d93940f0d78d8ca",
-        "tick_hash": "c1b386b5bd1f844a",
-        "echo_hash": "9cc8d9becd1a597c",
+        "parent_slot_hash": "3700dd0aafedcc12",
+        "candidate_slot_hash": "63fec846e2632fa8",
+        "tick_hash": "83214aaf3ccbb3de",
+        "echo_hash": "6af0311425e5731a",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "c83bc386055d3f2f",
+          "last_echo_hash": "fda5ed112252c72e",
           "halted": false,
           "step": 10,
-          "slot_state_hash": "4de459d12b760304"
+          "slot_state_hash": "559ef8c9f0c6eb21"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "read_count_slot",
-          "last_echo_hash": "9cc8d9becd1a597c",
+          "last_echo_hash": "6af0311425e5731a",
           "halted": false,
           "step": 11,
-          "slot_state_hash": "c224f0f141850be9"
+          "slot_state_hash": "60e00db6815e75c5"
         },
-        "candidate_hash": "cf046bbf6b4be123"
+        "candidate_hash": "202d3fd4300aead1"
       },
-      "arbitration_hash": "7fc911a06eb4955e"
+      "arbitration_hash": "dda57e41365ffbd0"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.783083+00:00",
+        "created_at": "2026-07-01T15:43:35.254553+00:00",
         "step": 12,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "0d93940f0d78d8ca",
-        "candidate_slot_hash": "1d2e675eaf86df7f",
-        "tick_hash": "58283383651f3d3e",
-        "echo_hash": "f1cbf762149c3c3e",
+        "parent_slot_hash": "63fec846e2632fa8",
+        "candidate_slot_hash": "82830a4e780edb6a",
+        "tick_hash": "bb5adbcffacc1614",
+        "echo_hash": "fcb0721e402bf240",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "read_count_slot",
-          "last_echo_hash": "9cc8d9becd1a597c",
+          "last_echo_hash": "6af0311425e5731a",
           "halted": false,
           "step": 11,
-          "slot_state_hash": "c224f0f141850be9"
+          "slot_state_hash": "60e00db6815e75c5"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "f1cbf762149c3c3e",
+          "last_echo_hash": "fcb0721e402bf240",
           "halted": false,
           "step": 12,
-          "slot_state_hash": "2cfee42cb4c29463"
+          "slot_state_hash": "21c1c7493a53811d"
         },
-        "candidate_hash": "74499878119cf1f5"
+        "candidate_hash": "179354b9f7e1eebd"
       },
-      "arbitration_hash": "218fad46797ae198"
+      "arbitration_hash": "94bf65b5de878c91"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.783461+00:00",
+        "created_at": "2026-07-01T15:43:35.254861+00:00",
         "step": 13,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "1d2e675eaf86df7f",
-        "candidate_slot_hash": "0aa090a3512fc406",
-        "tick_hash": "22ff8310019ee76c",
-        "echo_hash": "d46d221293f8df04",
+        "parent_slot_hash": "82830a4e780edb6a",
+        "candidate_slot_hash": "f96e1d08a0f129f7",
+        "tick_hash": "ef8a62fb52ff58be",
+        "echo_hash": "12856496d454443f",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "f1cbf762149c3c3e",
+          "last_echo_hash": "fcb0721e402bf240",
           "halted": false,
           "step": 12,
-          "slot_state_hash": "2cfee42cb4c29463"
+          "slot_state_hash": "21c1c7493a53811d"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "write_next_count",
-          "last_echo_hash": "d46d221293f8df04",
+          "last_echo_hash": "12856496d454443f",
           "halted": false,
           "step": 13,
-          "slot_state_hash": "003b423f3d3a4357"
+          "slot_state_hash": "fd6569dfa2420cdb"
         },
-        "candidate_hash": "b2a76c68ef30590a"
+        "candidate_hash": "84a5c90317815910"
       },
-      "arbitration_hash": "3a12051d761388cc"
+      "arbitration_hash": "fffcee0a9831943d"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.783854+00:00",
+        "created_at": "2026-07-01T15:43:35.255111+00:00",
         "step": 14,
         "sentence_id": "write_next_count",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
-        "parent_slot_hash": "0aa090a3512fc406",
-        "candidate_slot_hash": "57db1dc66756c8d7",
-        "tick_hash": "3768def2528a8d24",
-        "echo_hash": "888234379d12fd4d",
+        "parent_slot_hash": "f96e1d08a0f129f7",
+        "candidate_slot_hash": "cd7958a11b61081d",
+        "tick_hash": "8bf20087faf19727",
+        "echo_hash": "fb4ebe4c07c051d1",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 2,
           "cursor": "write_next_count",
-          "last_echo_hash": "d46d221293f8df04",
+          "last_echo_hash": "12856496d454443f",
           "halted": false,
           "step": 13,
-          "slot_state_hash": "003b423f3d3a4357"
+          "slot_state_hash": "fd6569dfa2420cdb"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "888234379d12fd4d",
+          "last_echo_hash": "fb4ebe4c07c051d1",
           "halted": false,
           "step": 14,
-          "slot_state_hash": "a9423a73b9a46552"
+          "slot_state_hash": "5f9b3c03f7b359ce"
         },
-        "candidate_hash": "b7bbd8a569d7cbc9"
+        "candidate_hash": "54c22fa86916fccf"
       },
-      "arbitration_hash": "3f46c5f0db2c3e61"
+      "arbitration_hash": "60391c470385f203"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.784496+00:00",
+        "created_at": "2026-07-01T15:43:35.255393+00:00",
         "step": 15,
         "sentence_id": "emit_count_echo",
         "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
-        "parent_slot_hash": "57db1dc66756c8d7",
-        "candidate_slot_hash": "ed8829c555a1b83c",
-        "tick_hash": "90d959ac4a19c0f5",
-        "echo_hash": "83bf772fb49ffff5",
+        "parent_slot_hash": "cd7958a11b61081d",
+        "candidate_slot_hash": "221ecfe7df4932dc",
+        "tick_hash": "f13ccd697e4eafc1",
+        "echo_hash": "b8989d6126bcec8e",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "888234379d12fd4d",
+          "last_echo_hash": "fb4ebe4c07c051d1",
           "halted": false,
           "step": 14,
-          "slot_state_hash": "a9423a73b9a46552"
+          "slot_state_hash": "5f9b3c03f7b359ce"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "83bf772fb49ffff5",
+          "last_echo_hash": "b8989d6126bcec8e",
           "halted": false,
           "step": 15,
-          "slot_state_hash": "e73b0d581866ab4b"
+          "slot_state_hash": "c53ec27d493b9589"
         },
-        "candidate_hash": "6a971684d3272787"
+        "candidate_hash": "6dc46678e7d7ac39"
       },
-      "arbitration_hash": "07c32f8badc419a7"
+      "arbitration_hash": "7eaefe147a8cfdc9"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.785142+00:00",
+        "created_at": "2026-07-01T15:43:35.255806+00:00",
         "step": 16,
         "sentence_id": "feed_echo_back",
         "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
-        "parent_slot_hash": "ed8829c555a1b83c",
-        "candidate_slot_hash": "9024fee412ef7998",
-        "tick_hash": "1cea6fc3deef0e32",
-        "echo_hash": "fef24c121ade6c75",
+        "parent_slot_hash": "221ecfe7df4932dc",
+        "candidate_slot_hash": "34150f3a560d5a47",
+        "tick_hash": "bd175b73dc38266b",
+        "echo_hash": "b51971e2eccd9f8d",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "83bf772fb49ffff5",
+          "last_echo_hash": "b8989d6126bcec8e",
           "halted": false,
           "step": 15,
-          "slot_state_hash": "e73b0d581866ab4b"
+          "slot_state_hash": "c53ec27d493b9589"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "read_count_slot",
-          "last_echo_hash": "fef24c121ade6c75",
+          "last_echo_hash": "b51971e2eccd9f8d",
           "halted": false,
           "step": 16,
-          "slot_state_hash": "8de648b45687ba6d"
+          "slot_state_hash": "8107bcbd3b55d342"
         },
-        "candidate_hash": "00c45a99a5b41d47"
+        "candidate_hash": "d26eda10ed1a4177"
       },
-      "arbitration_hash": "7a74832fe10d30b3"
+      "arbitration_hash": "540b74ca92af9049"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.785740+00:00",
+        "created_at": "2026-07-01T15:43:35.256527+00:00",
         "step": 17,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "9024fee412ef7998",
-        "candidate_slot_hash": "518e6249ca6f8569",
-        "tick_hash": "716e2d2d4d2438dc",
-        "echo_hash": "f8f3089ebe96cc20",
+        "parent_slot_hash": "34150f3a560d5a47",
+        "candidate_slot_hash": "fba288472babf89e",
+        "tick_hash": "8cdeb736dedd8fb2",
+        "echo_hash": "d7e05ca1ab07434d",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "read_count_slot",
-          "last_echo_hash": "fef24c121ade6c75",
+          "last_echo_hash": "b51971e2eccd9f8d",
           "halted": false,
           "step": 16,
-          "slot_state_hash": "8de648b45687ba6d"
+          "slot_state_hash": "8107bcbd3b55d342"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "f8f3089ebe96cc20",
+          "last_echo_hash": "d7e05ca1ab07434d",
           "halted": false,
           "step": 17,
-          "slot_state_hash": "a7424e7250eabd85"
+          "slot_state_hash": "0095f2f9d29dbb83"
         },
-        "candidate_hash": "5dbcf725391994f7"
+        "candidate_hash": "1fe3eea1a11d4432"
       },
-      "arbitration_hash": "6d548a81477d2093"
+      "arbitration_hash": "2ea8681c0ff7dbef"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.786247+00:00",
+        "created_at": "2026-07-01T15:43:35.257130+00:00",
         "step": 18,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "518e6249ca6f8569",
-        "candidate_slot_hash": "8d038ed9b3344be0",
-        "tick_hash": "2394035920c4795e",
-        "echo_hash": "657d61b3607dea2e",
+        "parent_slot_hash": "fba288472babf89e",
+        "candidate_slot_hash": "a1e4068e57eadc8a",
+        "tick_hash": "bc532901a6732509",
+        "echo_hash": "6592663df352c1ff",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "f8f3089ebe96cc20",
+          "last_echo_hash": "d7e05ca1ab07434d",
           "halted": false,
           "step": 17,
-          "slot_state_hash": "a7424e7250eabd85"
+          "slot_state_hash": "0095f2f9d29dbb83"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "write_next_count",
-          "last_echo_hash": "657d61b3607dea2e",
+          "last_echo_hash": "6592663df352c1ff",
           "halted": false,
           "step": 18,
-          "slot_state_hash": "a0cd477f478d0f2e"
+          "slot_state_hash": "005600a8104ec28f"
         },
-        "candidate_hash": "c9659589267438e2"
+        "candidate_hash": "942838dbfabe8665"
       },
-      "arbitration_hash": "bebf30bc1dd582c8"
+      "arbitration_hash": "411494cb44625be3"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.786639+00:00",
+        "created_at": "2026-07-01T15:43:35.257611+00:00",
         "step": 19,
         "sentence_id": "write_next_count",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
-        "parent_slot_hash": "8d038ed9b3344be0",
-        "candidate_slot_hash": "c8e20e8686251e45",
-        "tick_hash": "46fba2b1675bd92a",
-        "echo_hash": "732b8ab609985f62",
+        "parent_slot_hash": "a1e4068e57eadc8a",
+        "candidate_slot_hash": "50d3f7400e44c52b",
+        "tick_hash": "b8288aca3288d17a",
+        "echo_hash": "10bba6f62440dbcc",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 3,
           "cursor": "write_next_count",
-          "last_echo_hash": "657d61b3607dea2e",
+          "last_echo_hash": "6592663df352c1ff",
           "halted": false,
           "step": 18,
-          "slot_state_hash": "a0cd477f478d0f2e"
+          "slot_state_hash": "005600a8104ec28f"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "732b8ab609985f62",
+          "last_echo_hash": "10bba6f62440dbcc",
           "halted": false,
           "step": 19,
-          "slot_state_hash": "9aa159ca3e6c9d29"
+          "slot_state_hash": "1ec9395312da0ee5"
         },
-        "candidate_hash": "1d251074d7666e46"
+        "candidate_hash": "c52ed1eb4b47eb43"
       },
-      "arbitration_hash": "d9337605c3d7fb8f"
+      "arbitration_hash": "0e19676649d7fab3"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.787164+00:00",
+        "created_at": "2026-07-01T15:43:35.258097+00:00",
         "step": 20,
         "sentence_id": "emit_count_echo",
         "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
-        "parent_slot_hash": "c8e20e8686251e45",
-        "candidate_slot_hash": "3ab5b9bf42e4688a",
-        "tick_hash": "0bd91e837eaddaef",
-        "echo_hash": "0e9a2d3f81bce0bf",
+        "parent_slot_hash": "50d3f7400e44c52b",
+        "candidate_slot_hash": "011bf99fe0504193",
+        "tick_hash": "90dc829714ec79a6",
+        "echo_hash": "fc93406fc5022032",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "732b8ab609985f62",
+          "last_echo_hash": "10bba6f62440dbcc",
           "halted": false,
           "step": 19,
-          "slot_state_hash": "9aa159ca3e6c9d29"
+          "slot_state_hash": "1ec9395312da0ee5"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "0e9a2d3f81bce0bf",
+          "last_echo_hash": "fc93406fc5022032",
           "halted": false,
           "step": 20,
-          "slot_state_hash": "ed8046ea6c46c24c"
+          "slot_state_hash": "36b257f159b873e0"
         },
-        "candidate_hash": "c71ab1975588c197"
+        "candidate_hash": "07dc02d55d7ee6fc"
       },
-      "arbitration_hash": "94deb158213adcf4"
+      "arbitration_hash": "4309315839bb265e"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.787607+00:00",
+        "created_at": "2026-07-01T15:43:35.258588+00:00",
         "step": 21,
         "sentence_id": "feed_echo_back",
         "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
-        "parent_slot_hash": "3ab5b9bf42e4688a",
-        "candidate_slot_hash": "564ade568f0a4f42",
-        "tick_hash": "8a67e1218bdda82f",
-        "echo_hash": "e525b7a8e65073be",
+        "parent_slot_hash": "011bf99fe0504193",
+        "candidate_slot_hash": "ed0217b8daf317c9",
+        "tick_hash": "e332ac40e470e4ed",
+        "echo_hash": "f7e0deeba6dbf531",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "0e9a2d3f81bce0bf",
+          "last_echo_hash": "fc93406fc5022032",
           "halted": false,
           "step": 20,
-          "slot_state_hash": "ed8046ea6c46c24c"
+          "slot_state_hash": "36b257f159b873e0"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "read_count_slot",
-          "last_echo_hash": "e525b7a8e65073be",
+          "last_echo_hash": "f7e0deeba6dbf531",
           "halted": false,
           "step": 21,
-          "slot_state_hash": "da710724306a7807"
+          "slot_state_hash": "1f02e9786c16983b"
         },
-        "candidate_hash": "9da730b29d308cd1"
+        "candidate_hash": "56ca13930fda9738"
       },
-      "arbitration_hash": "b330423b7034739e"
+      "arbitration_hash": "8e9cfb537a048cab"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.788064+00:00",
+        "created_at": "2026-07-01T15:43:35.259026+00:00",
         "step": 22,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "564ade568f0a4f42",
-        "candidate_slot_hash": "aa658a8c6a11b1b6",
-        "tick_hash": "1b7c5ac82020163c",
-        "echo_hash": "9eccbba7e6705252",
+        "parent_slot_hash": "ed0217b8daf317c9",
+        "candidate_slot_hash": "d1f76dba3959c8b3",
+        "tick_hash": "4123caf1dfffc3e1",
+        "echo_hash": "0b59784b8f8395d1",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "read_count_slot",
-          "last_echo_hash": "e525b7a8e65073be",
+          "last_echo_hash": "f7e0deeba6dbf531",
           "halted": false,
           "step": 21,
-          "slot_state_hash": "da710724306a7807"
+          "slot_state_hash": "1f02e9786c16983b"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "9eccbba7e6705252",
+          "last_echo_hash": "0b59784b8f8395d1",
           "halted": false,
           "step": 22,
-          "slot_state_hash": "d2d4076e9b4d08ea"
+          "slot_state_hash": "b3237466f6fd1791"
         },
-        "candidate_hash": "779f2a9b990bd227"
+        "candidate_hash": "5a24a6351a8df92e"
       },
-      "arbitration_hash": "68dc1f988605ef85"
+      "arbitration_hash": "9031fc76beb3f188"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.788399+00:00",
+        "created_at": "2026-07-01T15:43:35.259478+00:00",
         "step": 23,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "aa658a8c6a11b1b6",
-        "candidate_slot_hash": "c738355c402c5cb1",
-        "tick_hash": "a934eff216b20c9f",
-        "echo_hash": "98bda8beba39def4",
+        "parent_slot_hash": "d1f76dba3959c8b3",
+        "candidate_slot_hash": "007fa66de944d4c4",
+        "tick_hash": "aac2dd705e461b83",
+        "echo_hash": "19aa1aeb0e48947b",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "9eccbba7e6705252",
+          "last_echo_hash": "0b59784b8f8395d1",
           "halted": false,
           "step": 22,
-          "slot_state_hash": "d2d4076e9b4d08ea"
+          "slot_state_hash": "b3237466f6fd1791"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "write_next_count",
-          "last_echo_hash": "98bda8beba39def4",
+          "last_echo_hash": "19aa1aeb0e48947b",
           "halted": false,
           "step": 23,
-          "slot_state_hash": "683e7431e38d01d7"
+          "slot_state_hash": "403210fc93404071"
         },
-        "candidate_hash": "4a4a34ebc94eb511"
+        "candidate_hash": "bc5b694fdb51128e"
       },
-      "arbitration_hash": "936860a74986d9cc"
+      "arbitration_hash": "440f0cb2ede2eb45"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.788716+00:00",
+        "created_at": "2026-07-01T15:43:35.259937+00:00",
         "step": 24,
         "sentence_id": "write_next_count",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN CANDIDATE_WRITE(count_slot, count_slot + 1) WITH tick_hash",
-        "parent_slot_hash": "c738355c402c5cb1",
-        "candidate_slot_hash": "e0e94bd5979981b4",
-        "tick_hash": "b57d792fe8d7d2e6",
-        "echo_hash": "e87f422ebdc0da61",
+        "parent_slot_hash": "007fa66de944d4c4",
+        "candidate_slot_hash": "3e90637e20d31d38",
+        "tick_hash": "164825f7ca0dd150",
+        "echo_hash": "991807adbb31b42e",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 4,
           "cursor": "write_next_count",
-          "last_echo_hash": "98bda8beba39def4",
+          "last_echo_hash": "19aa1aeb0e48947b",
           "halted": false,
           "step": 23,
-          "slot_state_hash": "683e7431e38d01d7"
+          "slot_state_hash": "403210fc93404071"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "e87f422ebdc0da61",
+          "last_echo_hash": "991807adbb31b42e",
           "halted": false,
           "step": 24,
-          "slot_state_hash": "e575a30f71462070"
+          "slot_state_hash": "d294b1f6a918765c"
         },
-        "candidate_hash": "6a847527e6eb0892"
+        "candidate_hash": "2674b700dfab9aaa"
       },
-      "arbitration_hash": "2024c0924843c58b"
+      "arbitration_hash": "4ddec0ca6bfb5690"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.789266+00:00",
+        "created_at": "2026-07-01T15:43:35.260383+00:00",
         "step": 25,
         "sentence_id": "emit_count_echo",
         "network_sentence": "WHEN CANDIDATE_ACCEPTED THEN EMIT_ECHO(count_slot) WITH echo_hash",
-        "parent_slot_hash": "e0e94bd5979981b4",
-        "candidate_slot_hash": "977c78bc049825cb",
-        "tick_hash": "0552596284308e53",
-        "echo_hash": "871df3c102bec929",
+        "parent_slot_hash": "3e90637e20d31d38",
+        "candidate_slot_hash": "583e59c6ee967038",
+        "tick_hash": "7eb24506110380a2",
+        "echo_hash": "c83d018ff56ebd8d",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "emit_count_echo",
-          "last_echo_hash": "e87f422ebdc0da61",
+          "last_echo_hash": "991807adbb31b42e",
           "halted": false,
           "step": 24,
-          "slot_state_hash": "e575a30f71462070"
+          "slot_state_hash": "d294b1f6a918765c"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "871df3c102bec929",
+          "last_echo_hash": "c83d018ff56ebd8d",
           "halted": false,
           "step": 25,
-          "slot_state_hash": "02ead599d404b210"
+          "slot_state_hash": "587d1d671c6ab024"
         },
-        "candidate_hash": "fcdb197502e991a4"
+        "candidate_hash": "823ff0f1c38d7216"
       },
-      "arbitration_hash": "0e79e507ec419fcc"
+      "arbitration_hash": "f0f805741b73ed3a"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.789657+00:00",
+        "created_at": "2026-07-01T15:43:35.260761+00:00",
         "step": 26,
         "sentence_id": "feed_echo_back",
         "network_sentence": "WHEN ECHO_CHAIN_READ_OK THEN FEED_ECHO_TO_SLOT WITH echo_hash",
-        "parent_slot_hash": "977c78bc049825cb",
-        "candidate_slot_hash": "c77ae0eae394b007",
-        "tick_hash": "6206061118fc647c",
-        "echo_hash": "0341adf6aad21f49",
+        "parent_slot_hash": "583e59c6ee967038",
+        "candidate_slot_hash": "31a6e8a86d80ca5b",
+        "tick_hash": "366cb1cb6d2e7e69",
+        "echo_hash": "ec03a66aaf0e27db",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "feed_echo_back",
-          "last_echo_hash": "871df3c102bec929",
+          "last_echo_hash": "c83d018ff56ebd8d",
           "halted": false,
           "step": 25,
-          "slot_state_hash": "02ead599d404b210"
+          "slot_state_hash": "587d1d671c6ab024"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "read_count_slot",
-          "last_echo_hash": "0341adf6aad21f49",
+          "last_echo_hash": "ec03a66aaf0e27db",
           "halted": false,
           "step": 26,
-          "slot_state_hash": "3b90d32a61a7ee1f"
+          "slot_state_hash": "434f90a047f33f8f"
         },
-        "candidate_hash": "af8f8fb03840360c"
+        "candidate_hash": "2676ad4bc9bc91d3"
       },
-      "arbitration_hash": "3995770f6aa7bfae"
+      "arbitration_hash": "84e3695f97887724"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.790245+00:00",
+        "created_at": "2026-07-01T15:43:35.261182+00:00",
         "step": 27,
         "sentence_id": "read_count_slot",
         "network_sentence": "WHEN TICK_ACCEPTED AND SLOT_STATE_READ_OK THEN READ_SLOT(count_slot) WITH slot_state_hash",
-        "parent_slot_hash": "c77ae0eae394b007",
-        "candidate_slot_hash": "6105b02967e22a77",
-        "tick_hash": "c046b4b2c718c235",
-        "echo_hash": "7629071ae215dc45",
+        "parent_slot_hash": "31a6e8a86d80ca5b",
+        "candidate_slot_hash": "9440c613ae744f4d",
+        "tick_hash": "cffb2873dd22d102",
+        "echo_hash": "7e4244b7dadbd017",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "read_count_slot",
-          "last_echo_hash": "0341adf6aad21f49",
+          "last_echo_hash": "ec03a66aaf0e27db",
           "halted": false,
           "step": 26,
-          "slot_state_hash": "3b90d32a61a7ee1f"
+          "slot_state_hash": "434f90a047f33f8f"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "7629071ae215dc45",
+          "last_echo_hash": "7e4244b7dadbd017",
           "halted": false,
           "step": 27,
-          "slot_state_hash": "206645896ff990d2"
+          "slot_state_hash": "69d6672d11736f45"
         },
-        "candidate_hash": "b30c2dd3724219ba"
+        "candidate_hash": "25fc91ca2a7d5db4"
       },
-      "arbitration_hash": "d3137c169007cf99"
+      "arbitration_hash": "80691e18b06b79fa"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.790652+00:00",
+        "created_at": "2026-07-01T15:43:35.261654+00:00",
         "step": 28,
         "sentence_id": "branch_count_slot",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) < 5 THEN MOVE_CURSOR(write_next_count) WITH condition_hash",
-        "parent_slot_hash": "6105b02967e22a77",
-        "candidate_slot_hash": "3b4168c31b18a85a",
-        "tick_hash": "ff5622f765a01672",
-        "echo_hash": "16a77afc38e0c441",
+        "parent_slot_hash": "9440c613ae744f4d",
+        "candidate_slot_hash": "18ebd7032be534eb",
+        "tick_hash": "7d5a2b349185360f",
+        "echo_hash": "46675c8c06964179",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "branch_count_slot",
-          "last_echo_hash": "7629071ae215dc45",
+          "last_echo_hash": "7e4244b7dadbd017",
           "halted": false,
           "step": 27,
-          "slot_state_hash": "206645896ff990d2"
+          "slot_state_hash": "69d6672d11736f45"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "halt_program",
-          "last_echo_hash": "16a77afc38e0c441",
+          "last_echo_hash": "46675c8c06964179",
           "halted": false,
           "step": 28,
-          "slot_state_hash": "e1a3517ff9409288"
+          "slot_state_hash": "97459b9a210e1c09"
         },
-        "candidate_hash": "de7f747ad641c4f4"
+        "candidate_hash": "bab2b834bba55436"
       },
-      "arbitration_hash": "8d03e91aa3c42d3a"
+      "arbitration_hash": "2ee684ffea24aac9"
     },
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.791069+00:00",
+        "created_at": "2026-07-01T15:43:35.262052+00:00",
         "step": 29,
         "sentence_id": "halt_program",
         "network_sentence": "WHEN SLOT_VALUE(count_slot) = 5 THEN HALT_AND_FREEZE WITH final_echo_hash",
-        "parent_slot_hash": "3b4168c31b18a85a",
-        "candidate_slot_hash": "21e5ec2bc31303c1",
-        "tick_hash": "e477b9cd21502ee5",
-        "echo_hash": "7fbb343321dad8a5",
+        "parent_slot_hash": "18ebd7032be534eb",
+        "candidate_slot_hash": "6681cf35d4b74eaf",
+        "tick_hash": "0644221ed5d3fb91",
+        "echo_hash": "8c511dbf33f05427",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "halt_program",
-          "last_echo_hash": "16a77afc38e0c441",
+          "last_echo_hash": "46675c8c06964179",
           "halted": false,
           "step": 28,
-          "slot_state_hash": "e1a3517ff9409288"
+          "slot_state_hash": "97459b9a210e1c09"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "halted",
-          "last_echo_hash": "7fbb343321dad8a5",
+          "last_echo_hash": "8c511dbf33f05427",
           "halted": true,
           "step": 29,
-          "slot_state_hash": "01c73adcd9f45739"
+          "slot_state_hash": "f53a260f0704d56b"
         },
-        "candidate_hash": "c72ba92cee1c71a3"
+        "candidate_hash": "062db686e15754a2"
       },
-      "arbitration_hash": "8d2eec85211c259b"
+      "arbitration_hash": "fd5ae80f0c53dce2"
     }
   ],
   "rejected_candidates": [
     {
       "candidate": {
         "schema": "NSC-V3-candidate-v1",
-        "created_at": "2026-07-01T15:29:50.791724+00:00",
+        "created_at": "2026-07-01T15:43:35.262335+00:00",
         "step": 999,
         "sentence_id": "boot_seed_count_slot",
         "network_sentence": "WHEN SLOT_MISSING(count_slot) THEN CANDIDATE_WRITE(count_slot, 0) WITH public_readback_hash",
         "parent_slot_hash": "bad_parent_for_reject",
-        "candidate_slot_hash": "d9789fc093d7f307",
-        "tick_hash": "2a13808f7e485973",
-        "echo_hash": "f8e7029989fe792b",
+        "candidate_slot_hash": "2e36d2ad55897649",
+        "tick_hash": "5a8a56744319c137",
+        "echo_hash": "382f2bf2355c5949",
         "before": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "halted",
-          "last_echo_hash": "7fbb343321dad8a5",
+          "last_echo_hash": "8c511dbf33f05427",
           "halted": true,
           "step": 29,
-          "slot_state_hash": "01c73adcd9f45739"
+          "slot_state_hash": "f53a260f0704d56b"
         },
         "after": {
           "schema": "NSC-V3-public-slot-state-v1",
-          "created_at": "2026-07-01T15:27:16.111275+00:00",
+          "created_at": "2026-07-01T15:43:08.251196+00:00",
           "count_slot": 5,
           "cursor": "invalid_jump",
-          "last_echo_hash": "7fbb343321dad8a5",
+          "last_echo_hash": "8c511dbf33f05427",
           "halted": true,
           "step": 30,
-          "slot_state_hash": "01c73adcd9f45739"
+          "slot_state_hash": "f53a260f0704d56b"
         },
-        "candidate_hash": "f672ccb850c6bb41"
+        "candidate_hash": "8e1934b4ca05ce05"
       },
       "arbitration": {
         "schema": "NSC-V3-arbitration-record-v1",
-        "created_at": "2026-07-01T15:29:50.791877+00:00",
-        "candidate_hash": "f672ccb850c6bb41",
+        "created_at": "2026-07-01T15:43:35.262417+00:00",
+        "candidate_hash": "8e1934b4ca05ce05",
         "parent_slot_matches": false,
         "cursor_matches": false,
         "tick_unused": true,
@@ -1065,9 +1065,9 @@
           "parent_slot_mismatch",
           "cursor_mismatch"
         ],
-        "arbitration_hash": "9b122b83681a228a"
+        "arbitration_hash": "d3af8060ed2ef708"
       }
     }
   ],
-  "candidate_pool_hash": "697be5283e67cca6"
+  "candidate_pool_hash": "8af02c46bf84ed83"
 }
