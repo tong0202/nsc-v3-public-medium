@@ -1,11 +1,11 @@
 {
   "schema": "NSC-V3-public-arbitration-log-v1",
-  "created_at": "2026-07-01T15:29:50.779741+00:00",
+  "created_at": "2026-07-01T15:43:35.251489+00:00",
   "records": [
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.780153+00:00",
-      "candidate_hash": "80da8ddc82a86169",
+      "created_at": "2026-07-01T15:43:35.251884+00:00",
+      "candidate_hash": "c766d0ef542c6036",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -14,12 +14,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "b66f407085714439"
+      "arbitration_hash": "a5c0cab8d2771d4b"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.780597+00:00",
-      "candidate_hash": "67d84213c829be5c",
+      "created_at": "2026-07-01T15:43:35.252151+00:00",
+      "candidate_hash": "cf431383547e45a5",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -28,12 +28,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "78d90e6b1bdd6062"
+      "arbitration_hash": "d4df2eaaa6caadad"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.780875+00:00",
-      "candidate_hash": "8be40c9defae1e73",
+      "created_at": "2026-07-01T15:43:35.252374+00:00",
+      "candidate_hash": "83c128817f01d126",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -42,12 +42,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "7ae29036e639b9d1"
+      "arbitration_hash": "19c6267cfca45ede"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.781121+00:00",
-      "candidate_hash": "de6b12d4a57c7986",
+      "created_at": "2026-07-01T15:43:35.252606+00:00",
+      "candidate_hash": "7e19333d26415345",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -56,12 +56,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "0370eb1c1262cc74"
+      "arbitration_hash": "361f979f341c3161"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.781342+00:00",
-      "candidate_hash": "f1f00a85fc713126",
+      "created_at": "2026-07-01T15:43:35.252867+00:00",
+      "candidate_hash": "62a8db1be1e14f03",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -70,12 +70,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "a36c4afc71cbbfb1"
+      "arbitration_hash": "3fad9c0064f873f3"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.781554+00:00",
-      "candidate_hash": "1b089783df1a325d",
+      "created_at": "2026-07-01T15:43:35.253094+00:00",
+      "candidate_hash": "11d186a3595e2428",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -84,12 +84,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "bf381bb2d2cf05d1"
+      "arbitration_hash": "b5f604ad6dc6d183"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.781762+00:00",
-      "candidate_hash": "b9cc98d2b8e9f0ee",
+      "created_at": "2026-07-01T15:43:35.253320+00:00",
+      "candidate_hash": "cfc79f10ccb02732",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -98,12 +98,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "fffd13bedd7a51ef"
+      "arbitration_hash": "92ae2384453119fc"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.781980+00:00",
-      "candidate_hash": "b515f6ee3840635e",
+      "created_at": "2026-07-01T15:43:35.253608+00:00",
+      "candidate_hash": "c7f294918efbf44f",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -112,12 +112,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "0e4d3928ec4a20f2"
+      "arbitration_hash": "be7d7d97b13f6989"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.782271+00:00",
-      "candidate_hash": "abd3c72d01192187",
+      "created_at": "2026-07-01T15:43:35.253932+00:00",
+      "candidate_hash": "762d684f95b2b112",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -126,12 +126,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "76b48759cb53cda5"
+      "arbitration_hash": "c1598b5a065aea0c"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.782541+00:00",
-      "candidate_hash": "7acef2db43e3a48e",
+      "created_at": "2026-07-01T15:43:35.254169+00:00",
+      "candidate_hash": "521cd959a734afb1",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -140,12 +140,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "7072b88fcaa05918"
+      "arbitration_hash": "edea729fca91a3f0"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.782826+00:00",
-      "candidate_hash": "cf046bbf6b4be123",
+      "created_at": "2026-07-01T15:43:35.254389+00:00",
+      "candidate_hash": "202d3fd4300aead1",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -154,12 +154,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "7fc911a06eb4955e"
+      "arbitration_hash": "dda57e41365ffbd0"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.783144+00:00",
-      "candidate_hash": "74499878119cf1f5",
+      "created_at": "2026-07-01T15:43:35.254599+00:00",
+      "candidate_hash": "179354b9f7e1eebd",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -168,12 +168,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "218fad46797ae198"
+      "arbitration_hash": "94bf65b5de878c91"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.783515+00:00",
-      "candidate_hash": "b2a76c68ef30590a",
+      "created_at": "2026-07-01T15:43:35.254908+00:00",
+      "candidate_hash": "84a5c90317815910",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -182,12 +182,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "3a12051d761388cc"
+      "arbitration_hash": "fffcee0a9831943d"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.783964+00:00",
-      "candidate_hash": "b7bbd8a569d7cbc9",
+      "created_at": "2026-07-01T15:43:35.255163+00:00",
+      "candidate_hash": "54c22fa86916fccf",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -196,12 +196,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "3f46c5f0db2c3e61"
+      "arbitration_hash": "60391c470385f203"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.784627+00:00",
-      "candidate_hash": "6a971684d3272787",
+      "created_at": "2026-07-01T15:43:35.255443+00:00",
+      "candidate_hash": "6dc46678e7d7ac39",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -210,12 +210,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "07c32f8badc419a7"
+      "arbitration_hash": "7eaefe147a8cfdc9"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.785267+00:00",
-      "candidate_hash": "00c45a99a5b41d47",
+      "created_at": "2026-07-01T15:43:35.255914+00:00",
+      "candidate_hash": "d26eda10ed1a4177",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -224,12 +224,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "7a74832fe10d30b3"
+      "arbitration_hash": "540b74ca92af9049"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.785880+00:00",
-      "candidate_hash": "5dbcf725391994f7",
+      "created_at": "2026-07-01T15:43:35.256661+00:00",
+      "candidate_hash": "1fe3eea1a11d4432",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -238,12 +238,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "6d548a81477d2093"
+      "arbitration_hash": "2ea8681c0ff7dbef"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.786302+00:00",
-      "candidate_hash": "c9659589267438e2",
+      "created_at": "2026-07-01T15:43:35.257243+00:00",
+      "candidate_hash": "942838dbfabe8665",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -252,12 +252,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "bebf30bc1dd582c8"
+      "arbitration_hash": "411494cb44625be3"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.786704+00:00",
-      "candidate_hash": "1d251074d7666e46",
+      "created_at": "2026-07-01T15:43:35.257686+00:00",
+      "candidate_hash": "c52ed1eb4b47eb43",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -266,12 +266,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "d9337605c3d7fb8f"
+      "arbitration_hash": "0e19676649d7fab3"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.787293+00:00",
-      "candidate_hash": "c71ab1975588c197",
+      "created_at": "2026-07-01T15:43:35.258155+00:00",
+      "candidate_hash": "07dc02d55d7ee6fc",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -280,12 +280,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "94deb158213adcf4"
+      "arbitration_hash": "4309315839bb265e"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.787667+00:00",
-      "candidate_hash": "9da730b29d308cd1",
+      "created_at": "2026-07-01T15:43:35.258653+00:00",
+      "candidate_hash": "56ca13930fda9738",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -294,12 +294,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "b330423b7034739e"
+      "arbitration_hash": "8e9cfb537a048cab"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.788155+00:00",
-      "candidate_hash": "779f2a9b990bd227",
+      "created_at": "2026-07-01T15:43:35.259122+00:00",
+      "candidate_hash": "5a24a6351a8df92e",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -308,12 +308,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "68dc1f988605ef85"
+      "arbitration_hash": "9031fc76beb3f188"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.788449+00:00",
-      "candidate_hash": "4a4a34ebc94eb511",
+      "created_at": "2026-07-01T15:43:35.259568+00:00",
+      "candidate_hash": "bc5b694fdb51128e",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -322,12 +322,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "936860a74986d9cc"
+      "arbitration_hash": "440f0cb2ede2eb45"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.788833+00:00",
-      "candidate_hash": "6a847527e6eb0892",
+      "created_at": "2026-07-01T15:43:35.260031+00:00",
+      "candidate_hash": "2674b700dfab9aaa",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -336,12 +336,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "2024c0924843c58b"
+      "arbitration_hash": "4ddec0ca6bfb5690"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.789387+00:00",
-      "candidate_hash": "fcdb197502e991a4",
+      "created_at": "2026-07-01T15:43:35.260478+00:00",
+      "candidate_hash": "823ff0f1c38d7216",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -350,12 +350,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "0e79e507ec419fcc"
+      "arbitration_hash": "f0f805741b73ed3a"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.789772+00:00",
-      "candidate_hash": "af8f8fb03840360c",
+      "created_at": "2026-07-01T15:43:35.260815+00:00",
+      "candidate_hash": "2676ad4bc9bc91d3",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -364,12 +364,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "3995770f6aa7bfae"
+      "arbitration_hash": "84e3695f97887724"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.790352+00:00",
-      "candidate_hash": "b30c2dd3724219ba",
+      "created_at": "2026-07-01T15:43:35.261274+00:00",
+      "candidate_hash": "25fc91ca2a7d5db4",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -378,12 +378,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "d3137c169007cf99"
+      "arbitration_hash": "80691e18b06b79fa"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.790705+00:00",
-      "candidate_hash": "de7f747ad641c4f4",
+      "created_at": "2026-07-01T15:43:35.261711+00:00",
+      "candidate_hash": "bab2b834bba55436",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -392,12 +392,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "8d03e91aa3c42d3a"
+      "arbitration_hash": "2ee684ffea24aac9"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.791138+00:00",
-      "candidate_hash": "c72ba92cee1c71a3",
+      "created_at": "2026-07-01T15:43:35.262112+00:00",
+      "candidate_hash": "062db686e15754a2",
       "parent_slot_matches": true,
       "cursor_matches": true,
       "tick_unused": true,
@@ -406,12 +406,12 @@
       "reasons": [
         "accepted_by_public_sentence_rule"
       ],
-      "arbitration_hash": "8d2eec85211c259b"
+      "arbitration_hash": "fd5ae80f0c53dce2"
     },
     {
       "schema": "NSC-V3-arbitration-record-v1",
-      "created_at": "2026-07-01T15:29:50.791877+00:00",
-      "candidate_hash": "f672ccb850c6bb41",
+      "created_at": "2026-07-01T15:43:35.262417+00:00",
+      "candidate_hash": "8e1934b4ca05ce05",
       "parent_slot_matches": false,
       "cursor_matches": false,
       "tick_unused": true,
@@ -421,8 +421,8 @@
         "parent_slot_mismatch",
         "cursor_mismatch"
       ],
-      "arbitration_hash": "9b122b83681a228a"
+      "arbitration_hash": "d3af8060ed2ef708"
     }
   ],
-  "arbitration_log_hash": "b2d07a701f68a1fc"
+  "arbitration_log_hash": "b82309bc1f09f0e8"
 }
