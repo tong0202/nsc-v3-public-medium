@@ -1,10 +1,10 @@
 {
   "schema": "NSC-V3-public-slot-state-v1",
-  "created_at": "2026-07-04T15:34:42.013075+00:00",
+  "created_at": "2026-07-04T15:43:35.223336+00:00",
   "count_slot": null,
   "cursor": "boot",
   "last_echo_hash": "",
   "halted": false,
   "step": 0,
-  "slot_state_hash": "a9ec8cfa42339811"
+  "slot_state_hash": "3fe746839a69c30a"
 }
